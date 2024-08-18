@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: poppins;
+}
+.object{
+    animation: MoveUpDown 1s linear infinite;
+    /* position: absolute; */
+    position: relative;
+    right: 15px;
+    bottom: 30px;
+    animation-duration: 7s;
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 40px;
+    }
+  }
+  .active{
+    color: red;
+  }
+  .pending{
+    color: #fff;
+  }
